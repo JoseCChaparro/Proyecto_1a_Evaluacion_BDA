@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Proyecto</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Proyecto</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cescuela%5Cbases%20de%20datos%20avanzadas%5Cproyecto%5Cproyecto.py">c:\escuela\bases de datos avanzadas\proyecto\proyecto.py</a></font></td></tr></table>
+    <p><tt>Proyecto_Parcial_1<br>
+&nbsp;<br>
+Este&nbsp;programa&nbsp;contiene&nbsp;9&nbsp;fucniones,&nbsp;las&nbsp;cuales&nbsp;se&nbsp;muestran&nbsp;en&nbsp;una&nbsp;interface.&nbsp;Estas&nbsp;funciones&nbsp;se&nbsp;utilizan&nbsp;para&nbsp;llamar&nbsp;procedimientos&nbsp;y&nbsp;funciones&nbsp;almacenadas&nbsp;en&nbsp;una&nbsp;base&nbsp;de&nbsp;datos&nbsp;Scott<br>
+esta&nbsp;instalada&nbsp;de&nbsp;manera&nbsp;local,&nbsp;con&nbsp;nombre&nbsp;de&nbsp;srevicio&nbsp;xepdb1.&nbsp;<br>
+Estas&nbsp;9&nbsp;funciones&nbsp;incluyen&nbsp;añadir,&nbsp;acutualizar,&nbsp;borrar,&nbsp;buscar&nbsp;y&nbsp;eliminar&nbsp;&nbsp;un&nbsp;elemento&nbsp;de&nbsp;cualquiera&nbsp;de&nbsp;sus&nbsp;dos&nbsp;tablas:&nbsp;emp&nbsp;y&nbsp;depto</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="PIL.Image.html">PIL.Image</a><br>
+<a href="PIL.ImageTk.html">PIL.ImageTk</a><br>
+</td><td width="25%" valign=top><a href="cx_Oracle.html">cx_Oracle</a><br>
+<a href="tkinter.messagebox.html">tkinter.messagebox</a><br>
+</td><td width="25%" valign=top><a href="tkinter.html">tkinter</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-Exit"><strong>Exit</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;destruye&nbsp;la&nbsp;ventana&nbsp;principal&nbsp;para&nbsp;terminar&nbsp;la&nbsp;ejecución&nbsp;del&nbsp;programa.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-add_depto"><strong>add_depto</strong></a>(dept_no, dept_name, dept_loc)</dt><dd><tt>Add&nbsp;department&nbsp;to&nbsp;database&nbsp;with&nbsp;parameters.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dept_no:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Llave&nbsp;única&nbsp;de&nbsp;la&nbsp;tabla&nbsp;de&nbsp;departamentos<br>
+dept_name&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nombre&nbsp;del&nbsp;departamento&nbsp;a&nbsp;agregar<br>
+dept_loc:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ubicación&nbsp;del&nbsp;departamento&nbsp;a&nbsp;agregar<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-add_depto_window"><strong>add_depto_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;departamento&nbsp;para&nbsp;añadirlo,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;add_depto.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-add_emp"><strong>add_emp</strong></a>(pemp_no, pename, pjob, pmgr, phiredate, psal, pcomm, pdeptno)</dt><dd><tt>Añade&nbsp;un&nbsp;empleado&nbsp;cuyos&nbsp;valores&nbsp;son&nbsp;los&nbsp;parametros&nbsp;definidos&nbsp;a&nbsp;continuación<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+&nbsp;<br>
+timestamp:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Hace&nbsp;referencia&nbsp;al&nbsp;numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;empleado&nbsp;que&nbsp;se&nbsp;busca&nbsp;añadir<br>
+pename:&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nombre&nbsp;del&nbsp;empleado&nbsp;nuevo<br>
+pjob:&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Puesto&nbsp;del&nbsp;empleado&nbsp;nuevo<br>
+pmgr:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;jefe&nbsp;del&nbsp;empleado&nbsp;nuevo<br>
+phiredate:&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Fecha&nbsp;de&nbsp;contratación&nbsp;del&nbsp;empleado<br>
+psal:&nbsp;float&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sueldo&nbsp;del&nbsp;nuevo&nbsp;empleado<br>
+pcomm:&nbsp;float&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Comisión&nbsp;del&nbsp;nuevo&nbsp;empleado<br>
+pdepto:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;departamento&nbsp;del&nbsp;empleado&nbsp;nuevo<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-add_emp_window"><strong>add_emp_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;empleado&nbsp;para&nbsp;añadirlo,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;add_emp.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-callback"><strong>callback</strong></a>(ventana)</dt><dd><tt>Se&nbsp;asegura&nbsp;de&nbsp;mantener&nbsp;el&nbsp;control&nbsp;del&nbsp;numero&nbsp;de&nbsp;ventanas&nbsp;abiertas<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+ventana&nbsp;:&nbsp;Tk()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ventana&nbsp;a&nbsp;cerrar<br>
+&nbsp;<br>
+Return<br>
+----------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-check_window_open"><strong>check_window_open</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;verifica&nbsp;el&nbsp;número&nbsp;de&nbsp;ventanas&nbsp;abiertas,&nbsp;para&nbsp;evitar&nbsp;que&nbsp;se&nbsp;abra&nbsp;mas&nbsp;de&nbsp;una&nbsp;y&nbsp;saturar&nbsp;el&nbsp;sistema,&nbsp;mostrando&nbsp;un&nbsp;mensaje&nbsp;de&nbsp;alerta&nbsp;si&nbsp;hay&nbsp;mas&nbsp;de&nbsp;una&nbsp;ventana&nbsp;de&nbsp;petición&nbsp;abierta.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-delete_dept_window"><strong>delete_dept_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;departamento&nbsp;para&nbsp;eliminarlo,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;delete_depto.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-delete_depto"><strong>delete_depto</strong></a>(dept_no)</dt><dd><tt>Elimina&nbsp;un&nbsp;departamento&nbsp;dado&nbsp;por&nbsp;su&nbsp;numero&nbsp;de&nbsp;departamento.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dept_no:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Llave&nbsp;única&nbsp;de&nbsp;la&nbsp;tabla&nbsp;de&nbsp;departamentos<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-delete_emp"><strong>delete_emp</strong></a>(pemp_no)</dt><dd><tt>Elimina&nbsp;un&nbsp;empleado&nbsp;dado&nbsp;por&nbsp;su&nbsp;numero&nbsp;de&nbsp;empleado.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+&nbsp;<br>
+pemp_no:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;empleado&nbsp;a&nbsp;borrar<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-delete_emp_window"><strong>delete_emp_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;empleado&nbsp;para&nbsp;eliminarlo,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;delete_emp.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-handle_focus_in"><strong>handle_focus_in</strong></a>(event)</dt><dd><tt>Funcion&nbsp;que&nbsp;borra&nbsp;el&nbsp;texto&nbsp;de&nbsp;ejmplo&nbsp;al&nbsp;hacer&nbsp;clic&nbsp;en&nbsp;un&nbsp;entry<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+event:&nbsp;tkinter.Event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Es&nbsp;el&nbsp;evento&nbsp;que&nbsp;se&nbsp;usa&nbsp;para&nbsp;obtener&nbsp;el&nbsp;entry&nbsp;al&nbsp;cual&nbsp;se&nbsp;le&nbsp;va&nbsp;a&nbsp;borrar&nbsp;el&nbsp;texto&nbsp;de&nbsp;ejemplo<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-noemp_depto"><strong>noemp_depto</strong></a>(dept_no)</dt><dd><tt>Encuentra&nbsp;el&nbsp;numero&nbsp;de&nbsp;empleados&nbsp;del&nbsp;departamento&nbsp;dado&nbsp;el&nbsp;número&nbsp;de&nbsp;departamento.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+&nbsp;<br>
+dept_no:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;departamento&nbsp;del&nbsp;departamento&nbsp;que&nbsp;se&nbsp;busca&nbsp;conocer&nbsp;el&nbsp;numero&nbsp;de&nbsp;empleados<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-noemp_depto_window"><strong>noemp_depto_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;el&nbsp;numero&nbsp;de&nbsp;departamento&nbsp;para&nbsp;calcular&nbsp;el&nbsp;numero&nbsp;de&nbsp;empleados&nbsp;registrados&nbsp;en&nbsp;el,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;noemp_depto.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-read_dept"><strong>read_dept</strong></a>(emp_no)</dt><dd><tt>Funcion&nbsp;que&nbsp;obtiene&nbsp;y&nbsp;muestra&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;departamento,&nbsp;dado&nbsp;su&nbsp;número&nbsp;de&nbsp;departamento.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dept_no:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;departamento&nbsp;del&nbsp;departamento&nbsp;a&nbsp;buscar<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-read_emp"><strong>read_emp</strong></a>(emp_no)</dt><dd><tt>Funcion&nbsp;que&nbsp;obtiene&nbsp;y&nbsp;muestra&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;empleado,&nbsp;dado&nbsp;su&nbsp;número&nbsp;de&nbsp;empleado.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+emp_no:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;empleado&nbsp;a&nbsp;buscar<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-search_dept_window"><strong>search_dept_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;el&nbsp;numero&nbsp;de&nbsp;departamento&nbsp;para&nbsp;obtener&nbsp;y&nbsp;mostrar&nbsp;sus&nbsp;datos&nbsp;llamando&nbsp;a&nbsp;la&nbsp;función&nbsp;read_dept.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-search_emp_window"><strong>search_emp_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;el&nbsp;numero&nbsp;de&nbsp;empleado&nbsp;para&nbsp;obtener&nbsp;y&nbsp;mostrar&nbsp;sus&nbsp;datos&nbsp;llamando&nbsp;a&nbsp;la&nbsp;función&nbsp;read_emp.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-update_dept_window"><strong>update_dept_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;departamento&nbsp;para&nbsp;actualizar&nbsp;sus&nbsp;datos,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;update_depto.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-update_depto"><strong>update_depto</strong></a>(dept_no, dept_name, dept_loc)</dt><dd><tt>Actualizar&nbsp;los&nbsp;valores&nbsp;del&nbsp;departamento&nbsp;dado&nbsp;por&nbsp;el&nbsp;numero&nbsp;de&nbsp;departamento.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+dept_no:&nbsp;int&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;departamento&nbsp;del&nbsp;departamento&nbsp;a&nbsp;cambiar&nbsp;datos<br>
+dept_name:&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nuevo&nbsp;nombre&nbsp;del&nbsp;departamento<br>
+dept_loc:&nbsp;string&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nueva&nbsp;localización&nbsp;del&nbsp;departamento<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-update_emp"><strong>update_emp</strong></a>(pemp_no, pename, pjob, pmgr, phiredate, psal, pcomm, pdeptno)</dt><dd><tt>Actualizar&nbsp;los&nbsp;valores&nbsp;del&nbsp;empleado&nbsp;dado&nbsp;por&nbsp;el&nbsp;numero&nbsp;de&nbsp;empleado.<br>
+Parameters<br>
+----------<br>
+pemp_no:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hace&nbsp;referencia&nbsp;al&nbsp;numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;empleado&nbsp;que&nbsp;se&nbsp;busca&nbsp;actualizar<br>
+pename:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nuevo&nbsp;nombre&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualizar<br>
+pjob:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nuevo&nbsp;puesto&nbsp;del&nbsp;empleado<br>
+pmgr:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Numero&nbsp;de&nbsp;empleado&nbsp;del&nbsp;jefe&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualziar<br>
+phiredate:&nbsp;string<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Fecha&nbsp;de&nbsp;contratación&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualziar<br>
+psal:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nuevo&nbsp;sueldo&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualizar<br>
+pcomm:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nueva&nbsp;comisión&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualizar<br>
+pdepto:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nuevo&nbsp;numero&nbsp;de&nbsp;departamento&nbsp;del&nbsp;empleado&nbsp;a&nbsp;actualizar<br>
+&nbsp;<br>
+Returns<br>
+------<br>
+None</tt></dd></dl>
+ <dl><dt><a name="-update_emp_window"><strong>update_emp_window</strong></a>()</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;la&nbsp;ventana&nbsp;que&nbsp;se&nbsp;encarga&nbsp;de&nbsp;obtener&nbsp;los&nbsp;datos&nbsp;de&nbsp;un&nbsp;empleado&nbsp;para&nbsp;actualizar&nbsp;sus&nbsp;datos,&nbsp;llamando&nbsp;a&nbsp;la&nbsp;funcion&nbsp;update_emp.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+None<br>
+&nbsp;<br>
+Return<br>
+------<br>
+None</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>add_depto_bt</strong> = None<br>
+<strong>add_emp_bt</strong> = None<br>
+<strong>buscar_dept</strong> = None<br>
+<strong>buscar_emp_bt</strong> = None<br>
+<strong>color_1</strong> = '#5690e6'<br>
+<strong>color_2</strong> = 'gray95'<br>
+<strong>color_3</strong> = 'black'<br>
+<strong>color_4</strong> = 'white'<br>
+<strong>counter_windows</strong> = 0<br>
+<strong>delete_dept_bt</strong> = None<br>
+<strong>delete_empn_bt</strong> = None<br>
+<strong>exit_bt</strong> = None<br>
+<strong>font_1</strong> = 'times new roman'<br>
+<strong>font_2</strong> = 'helvetica'<br>
+<strong>frame_1</strong> = &lt;tkinter.Frame object .!frame&gt;<br>
+<strong>frame_2</strong> = &lt;tkinter.Frame object .!frame2&gt;<br>
+<strong>get_no_emp_bt</strong> = None<br>
+<strong>img</strong> = &lt;PIL.ImageTk.PhotoImage object&gt;<br>
+<strong>integrantes</strong> = &lt;tkinter.Label object .!frame.!label2&gt;<br>
+<strong>label</strong> = &lt;tkinter.Label object .!frame.!label5&gt;<br>
+<strong>profe</strong> = &lt;tkinter.Label object .!frame.!label4&gt;<br>
+<strong>resultado_sulta</strong> = &lt;tkinter.Label object .!frame.!label3&gt;<br>
+<strong>titulo_consulta</strong> = &lt;tkinter.Label object .!frame.!label&gt;<br>
+<strong>update_dept_bt</strong> = None<br>
+<strong>view_bt</strong> = None<br>
+<strong>window</strong> = &lt;tkinter.Tk object .&gt;</td></tr></table>
+</body></html>
